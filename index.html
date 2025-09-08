@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Fundamentals Mini Project</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Use full page height and reset margin */
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #222;
+      color: white;
+    }
+
+    /* Flexbox centering */
+    body {
+      display: flex;
+      justify-content: center; /* horizontal center */
+      align-items: center;     /* vertical center */
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Container with background and padding */
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Style inputs and buttons */
+    input, button {
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    button {
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    /* Paragraph margin */
+    #togglePara {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome!</h1>
+
+    <label for="nameInput">Enter your name: </label>
+    <input type="text" id="nameInput" />
+    <button id="greetBtn">Greet Me</button>
+
+    <h2 id="greeting"></h2>
+
+    <button id="colorBtn">Change Background Color</button>
+
+    <h3>Numbers from 1 to 5:</h3>
+    <div id="numberList"></div>
+
+    <button id="toggleBtn">Show/Hide Paragraph</button>
+    <p id="togglePara">This is a paragraph you can show or hide.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
